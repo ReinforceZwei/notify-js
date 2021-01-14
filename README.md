@@ -1,19 +1,24 @@
 # Notify-js
 
-A simple HTML notification box that slides out from the side. Require jQuery, browser only.
+A simple HTML notification box that slides out and show your message on the right hand side. Require jQuery, browser only.
 
 ![Screenshot](screenshot/screenshot1.JPG)
 
-It also support multiple notification box at the same time.
+It also support multiple notification box at the same time.\
 ![Screenshot](screenshot/screenshot2.JPG)
 
 
 _This is an old project intended for learning JavaScript. No support will be provided. But PR is welcomed. Community Power <3_
 
 # Basic usage
+Download and include the js file in your html.
+```js
+<script type="text/javascript" src="notification.js"></script>
+```
+Show a notifiction
 ```js
 let box = window.notify.showNotification("Your message", {/* options */}); // showNotification returns a jQuery object
-notify.closeNotification(box); // Close it
+// notify.closeNotification(box); // Close it like that
 ```
 
 Available options
